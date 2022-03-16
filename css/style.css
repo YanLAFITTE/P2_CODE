@@ -647,6 +647,7 @@ main {
 
 .activities .parc-calanques img {
   height: 400px;
+  filter: brightness(1.3);
 }
 
 .activities .notre-dame img {
@@ -657,6 +658,7 @@ main {
 .activities .parc-longchamp img {
   height: 150px;
   object-position: 0px 60%;
+  filter: brightness(1.2);
 }
 
 .activities-card img {
