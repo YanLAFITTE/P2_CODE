@@ -8,9 +8,7 @@
 }
 
 * {
-  box-sizing: border-box; /* Opera/IE 8+ */
-  -moz-box-sizing: border-box; /* Firefox, autres Gecko */
-  -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+  box-sizing: border-box;
   font-family: "Raleway", sans-serif;
 }
 
@@ -589,7 +587,6 @@ main {
   font-weight: 600;
   font-size: 18px;
   margin-left: 4%;
-  padding-bottom: 15px;
 }
 
 .activities-cards {
@@ -616,6 +613,22 @@ main {
   box-shadow: 3px 3px 10px var(--darkgrey);
   width: 300px;
   margin-bottom: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.activities-card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: 0;
+  border-bottom: 3px solid var(--blue);
+  transition: all 200ms ease-out;
 }
 
 .activities .vieux-port img {
@@ -649,20 +662,18 @@ main {
 .activities-card img {
   border-radius: 15px 15px 0 0;
   width: 100%;
-  filter: grayscale(100%);
   object-fit: cover;
-  transition: all 100ms;
+  transition: transform 200ms ease-out;
 }
 
 .activities-card:hover {
   cursor: pointer;
   color: var(--blue);
 }
-
+.activities-card:hover::before {
+  transform: scale(1);
+}
 .activities-card:hover > img {
-  box-shadow: 3px 3px 20px 2px var(--darkgrey);
-  border-radius: 15px;
-  filter: none;
   transform: scale(1.03);
 }
 
@@ -708,12 +719,6 @@ main {
   .activities-card {
     width: 100%;
     margin: 15px 0 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .activities-card img {
-    filter: none;
   }
 }
 
