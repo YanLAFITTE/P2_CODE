@@ -255,7 +255,7 @@ main {
 }
 
 .research .filter:hover > i {
-  background-color: #FFF;
+  background-color: #fff;
   color: var(--blue);
   border: 2px solid var(--darkgrey);
 }
