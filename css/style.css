@@ -231,13 +231,13 @@ main {
   align-items: center;
   border: 2px solid var(--darkgrey);
   border-radius: 30px;
-  transition: all 200ms;
+  transition: all 100ms ease-in-out;
 }
 
 .research .filter:hover {
   cursor: pointer;
   color: var(--blue);
-  border: 2px solid var(--lightblue);
+  border-color: var(--darkgrey);
 }
 
 .research .filter i {
@@ -251,19 +251,13 @@ main {
   width: 48px;
   height: 48px;
   margin: -2px;
-}
-
-@keyframes rotate-icon {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  transition: all 100ms ease-in-out;
 }
 
 .research .filter:hover > i {
-  animation: rotate-icon 600ms ease-in-out;
+  background-color: #FFF;
+  color: var(--blue);
+  border: 2px solid var(--darkgrey);
 }
 
 .research .filter span {
