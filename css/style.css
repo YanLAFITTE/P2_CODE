@@ -19,16 +19,16 @@ a {
 }
 
 main {
-  padding: 0 50px;
+  padding: 0 40px;
 }
 
 @media (max-width: 992px) {
   main {
-    padding: 0 30px;
+    padding: 0 20px;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   main {
     padding: 0;
   }
@@ -67,7 +67,7 @@ main {
   transition-duration: 200ms;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .header {
     flex-direction: column;
   }
@@ -111,13 +111,11 @@ main {
   margin-bottom: 22px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .research {
     padding: 0 20px;
   }
-}
 
-@media (max-width: 480px) {
   .research-title {
     font-size: 20px;
     font-weight: 700;
@@ -183,7 +181,7 @@ main {
   display: none;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .research-form input {
     padding-right: 20px;
   }
@@ -217,13 +215,13 @@ main {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 15px 25px;
+  gap: 20px;
 }
 
 .research h2 {
   font-size: 18px;
   font-weight: 700;
-  margin-right: 35px;
+  margin-right: 20px;
 }
 
 .research .filter {
@@ -355,30 +353,26 @@ main {
 .accomodation h2 {
   font-size: 22px;
   font-weight: 600;
-  margin-left: 2%;
-  margin-bottom: 5%;
 }
 
 .accomodation .more {
-  margin-left: 2%;
   font-weight: 600;
   font-size: 18px;
 }
 
 .accomodation-cards {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  gap: 5px;
+  justify-content: space-around;
 }
 
 .accomodation-card {
   box-shadow: 3px 3px 10px var(--darkgrey);
   border-radius: 17px;
   background-color: #ffffff;
-  width: 250px;
-  margin-bottom: 10%;
   padding: 5px;
+  min-width: 250px;
+  margin: 5px 5px 20px;
   transition: all 100ms ease;
 }
 
@@ -409,38 +403,20 @@ main {
   padding: 5px 0 5px;
   margin-left: 4%;
 }
-
-@media (min-width: 1700px) {
-  .accomodation-cards {
-    gap: 5%;
-  }
-
+@media (max-width: 992px) {
   .accomodation-card {
-    margin-bottom: 20%;
+    min-width: 300px;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .accomodation {
     background-color: #ffffff;
   }
 
   .accomodation-cards {
     display: block;
-  }
 
-  .accomodation-card {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .accomodation h2,
-  .accomodation .more {
-    margin-left: 1%;
-  }
-
-  .accomodation h2 {
-    margin-bottom: 30px;
   }
 
   .accomodation .more {
@@ -462,14 +438,13 @@ main {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin: 0 2% 8%;
 }
 
 .popular h2,
 .popular-heading i {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .popular-heading i {
@@ -490,9 +465,8 @@ main {
   border-radius: 17px;
   background-color: #ffffff;
   padding: 5px;
-  height: 150px;
+  height: 125px;
   position: relative;
-  min-width: 250px;
   transition: all 100ms ease;
 }
 
@@ -525,23 +499,8 @@ main {
 
 @media (max-width: 992px) {
   .popular {
-    padding: 2% 20px 4%;
-    margin-bottom: 2%;
-  }
-
-  .popular-heading {
-    margin-bottom: 5%;
-  }
-
-  .popular-cards {
-    flex-direction: row;
-    gap: 1%;
-  }
-}
-
-@media (max-width: 850px) {
-  .popular {
     padding: 2% 20px 35px;
+    margin-bottom: 15px;
   }
 
   .popular-heading {
@@ -549,15 +508,16 @@ main {
   }
 
   .popular-cards {
-    display: block;
+    align-items: center;
   }
 
   .popular-card {
     margin-bottom: 20px;
+    max-width: 600px;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .popular {
     border-radius: unset;
   }
@@ -574,7 +534,7 @@ main {
 .activities h2 {
   font-size: 22px;
   font-weight: 600;
-  margin: 50px 0 30px 2%;
+  margin: 30px 20px;
 }
 
 .activities h3 {
@@ -585,28 +545,29 @@ main {
 
 .activities-cards {
   display: flex;
-  flex-wrap: wrap;
+  gap: 4%;
+  margin-bottom: 40px;
 }
 
 .activities-cards-right,
 .activities-cards-left {
   display: flex;
-  flex-wrap: wrap;
-  flex-basis: 50%;
-  justify-content: space-around;
 }
 
 .activities-small-cards {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 70%;
+}
+.parc-calanques,
+.vieux-port {
+  width: 85%;
 }
 
 .activities-card {
   border-radius: 15px;
   box-shadow: 3px 3px 10px var(--darkgrey);
-  width: 300px;
-  margin-bottom: 40px;
   overflow: hidden;
   position: relative;
 }
@@ -673,13 +634,13 @@ main {
   transform: scale(1.03);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .activities {
-    padding: 20px 20px 35px;
+    padding: 20px 20px;
   }
 
   .activities h2 {
-    margin-top: 15px;
+    margin: 15px 0 20px;
   }
 
   .activities h3 {
@@ -712,12 +673,14 @@ main {
     display: block;
   }
 
-  .activities-card {
+  .activities-card,
+  .activities-small-cards {
+    display: block;
     width: 100%;
-    margin: 15px 0 0;
+    max-width: 600px;
+    margin: 0 auto 20px;
   }
 }
-
 /* FOOTER */
 
 .footer {
@@ -725,7 +688,7 @@ main {
   flex-wrap: wrap;
   gap: 35px 5px;
   background-color: var(--grey);
-  padding: 35px 0 55px 60px;
+  padding: 35px 0 20px 60px;
 }
 
 .footer .about {
@@ -745,10 +708,15 @@ main {
   font-weight: 300;
 }
 
+@media (max-width: 992px) {
+  .footer {
+    padding-left: 40px;
+  }
+}
+
 @media (max-width: 480px) {
   .footer {
     display: block;
-    padding: 35px 0 30px 45px;
   }
 
   .footer .about {
