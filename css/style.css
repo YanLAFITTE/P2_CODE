@@ -12,6 +12,12 @@
   font-family: "Raleway", sans-serif;
 }
 
+@media (min-width: 1650px) {
+  body {
+    padding: 0 8%;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -318,7 +324,7 @@ main {
 
 .results {
   display: flex;
-  gap: 2.5%;
+  gap: 2%;
 }
 
 .results .stars {
@@ -372,7 +378,7 @@ main {
   background-color: #ffffff;
   padding: 5px;
   min-width: 250px;
-  margin: 5px 5px 20px;
+  margin: 5px 5px 25px;
   transition: all 100ms ease;
 }
 
@@ -416,7 +422,6 @@ main {
 
   .accomodation-cards {
     display: block;
-
   }
 
   .accomodation .more {
@@ -456,7 +461,6 @@ main {
   flex-direction: column;
   height: 87%;
   justify-content: space-evenly;
-  gap: 5%;
 }
 
 .popular-card {
@@ -465,9 +469,10 @@ main {
   border-radius: 17px;
   background-color: #ffffff;
   padding: 5px;
-  height: 125px;
+  height: 130px;
   position: relative;
   transition: all 100ms ease;
+  min-width: 270px;
 }
 
 .popular-card img {
@@ -508,11 +513,11 @@ main {
   }
 
   .popular-cards {
-    align-items: center;
+    display: block;
   }
 
   .popular-card {
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
     max-width: 600px;
   }
 }
