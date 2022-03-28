@@ -389,7 +389,7 @@ main {
 
 .accomodation-card img {
   width: 100%;
-  height: 180px;
+  height: 150px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
   object-position: 0 60%;
@@ -397,7 +397,7 @@ main {
 
 .accomodation-card h3,
 .accomodation-card p {
-  margin: 2% 0 1% 4%;
+  margin: 2% 0 1% 2%;
 }
 
 .accomodation-card h3 {
@@ -412,7 +412,7 @@ main {
 }
 
 .accomodation .stars {
-  padding: 5px 0 10px;
+  padding: 10px 0 5px;
   margin-left: 4%;
 }
 
@@ -482,7 +482,7 @@ main {
   display: flex;
   position: relative;
   min-width: 250px;
-  height: 175px;
+  height: 150px;
   border-radius: 17px;
   box-shadow: 3px 3px 10px var(--darkgrey);
   background-color: #ffffff;
@@ -504,7 +504,7 @@ main {
 .popular-card h3 {
   font-size: 100%;
   font-weight: 700;
-  margin: 6% 0 5% 0;
+  margin: 10px 0 5% 0;
 }
 
 .popular-card p {
@@ -532,6 +532,7 @@ main {
   }
 
   .popular-card {
+    height: 175px;
     margin: 0 auto 25px;
   }
 }
