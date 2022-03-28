@@ -16,6 +16,9 @@
   body {
     padding: 0 8%;
   }
+  footer {
+    border-radius: 17px;
+  }
 }
 
 a {
@@ -368,13 +371,15 @@ main {
 
 .accomodation-cards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: flex-end;
+}
+.cards-container {
+  margin: 0 auto;
+  flex-basis: 33%;
 }
 
 .accomodation-card {
   border-radius: 17px;
-  min-width: 250px;
   box-shadow: 3px 3px 10px var(--darkgrey);
   background-color: #ffffff;
   padding: 5px;
@@ -383,21 +388,22 @@ main {
 }
 
 .accomodation-card img {
-  border-radius: 14px 14px 0 0;
   width: 100%;
-  height: 120px;
+  height: 180px;
+  border-radius: 15px 15px 0 0;
   object-fit: cover;
-  object-position: 0px 65%;
+  object-position: 0 60%;
 }
 
 .accomodation-card h3,
 .accomodation-card p {
-  margin: 2% 0 2% 4%;
+  margin: 2% 0 1% 4%;
 }
 
 .accomodation-card h3 {
   font-size: 100%;
   font-weight: 700;
+  width: max-content;
 }
 
 .accomodation-card p {
@@ -406,15 +412,21 @@ main {
 }
 
 .accomodation .stars {
-  padding: 5px 0 5px;
+  padding: 5px 0 10px;
   margin-left: 4%;
 }
 
 @media (max-width: 992px) {
+  .accomodation-cards {
+    display: block;
+  }
+
   .accomodation-card {
     min-width: 320px;
-    max-width: 600px;
     margin: 0 auto 25px;
+  }
+  .accomodation-card img {
+    height: 150px;
   }
 }
 
@@ -438,7 +450,7 @@ main {
 .popular {
   flex-basis: 33%;
   border-radius: 17px;
-  padding: 2% 30px;
+  padding: 2% 20px;
   background-color: var(--grey);
 }
 
@@ -452,7 +464,7 @@ main {
 .popular-heading i {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .popular-heading i {
@@ -469,8 +481,8 @@ main {
 .popular-card {
   display: flex;
   position: relative;
-  min-width: 270px;
-  height: 130px;
+  min-width: 250px;
+  height: 175px;
   border-radius: 17px;
   box-shadow: 3px 3px 10px var(--darkgrey);
   background-color: #ffffff;
@@ -492,7 +504,7 @@ main {
 .popular-card h3 {
   font-size: 100%;
   font-weight: 700;
-  margin: 5% 0 5% 0;
+  margin: 6% 0 5% 0;
 }
 
 .popular-card p {
@@ -520,7 +532,6 @@ main {
   }
 
   .popular-card {
-    max-width: 600px;
     margin: 0 auto 25px;
   }
 }
@@ -658,6 +669,7 @@ main {
 
   .activities h3 {
     font-size: 16px;
+    margin: 4%;
   }
 
   .activities .vieux-port img,
@@ -666,7 +678,7 @@ main {
   .activities .iles-frioul img,
   .activities .notre-dame img,
   .activities .parc-longchamp img {
-    height: 120px;
+    height: 150px;
   }
 
   .activities .parc-calanques img {
@@ -690,7 +702,6 @@ main {
   .activities-small-cards {
     display: block;
     width: 100%;
-    max-width: 600px;
     margin: 0 auto 25px;
   }
 }
@@ -702,13 +713,13 @@ main {
   flex-wrap: wrap;
   gap: 35px 5px;
   background-color: var(--grey);
-  padding: 35px 0 20px 60px;
+  padding: 35px 0 35px 60px;
 }
 
 .footer .about {
   display: flex;
   flex-direction: column;
-  flex-basis: 33%;
+  flex-basis: 30%;
   min-width: 300px;
   line-height: 30px;
 }
@@ -725,6 +736,12 @@ main {
 @media (max-width: 992px) {
   .footer {
     padding-left: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-left: 20px;
   }
 }
 
