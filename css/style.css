@@ -610,6 +610,7 @@ main {
 .activities .vieux-port img {
   height: 400px;
   object-position: 30%;
+  filter: brightness(1.1);
 }
 
 .activities .fort-pomegues img {
