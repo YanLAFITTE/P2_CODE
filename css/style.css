@@ -422,7 +422,6 @@ main {
   }
 
   .accomodation-card {
-    min-width: 320px;
     margin: 0 auto 25px;
   }
   .accomodation-card img {
@@ -481,7 +480,6 @@ main {
 .popular-card {
   display: flex;
   position: relative;
-  min-width: 250px;
   height: 150px;
   border-radius: 17px;
   box-shadow: 3px 3px 10px var(--darkgrey);
