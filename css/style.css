@@ -578,12 +578,12 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 70%;
+  width: 75%;
 }
 
 .parc-calanques,
 .vieux-port {
-  width: 85%;
+  width: 90%;
 }
 
 .activities-card {
